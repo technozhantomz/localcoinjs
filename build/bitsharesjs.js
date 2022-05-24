@@ -12275,21 +12275,21 @@ Validation is enforced when an object type is used. */
                             address_prefix:
                                 process.env
                                     .npm_config__graphene_ecc_default_address_prefix ||
-                                "LLC"
+                                "KES"
                         };
 
                         _this = {
-                            core_asset: "CORE",
-                            address_prefix: "LLC",
+                            core_asset: "KES",
+                            address_prefix: "KES",
                             expire_in_secs: 15,
                             expire_in_secs_proposal: 24 * 60 * 60,
                             review_in_secs_committee: 24 * 60 * 60,
                             networks: {
                                 BitShares: {
-                                    core_asset: "BTS",
-                                    address_prefix: "BTS",
+                                    core_asset: "KES",
+                                    address_prefix: "KES",
                                     chain_id:
-                                        "4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8"
+                                        "8d1be24270faee1bf531398c9b77c313956dbc9607f6b873e23ff62840786c07"
                                 },
                                 Muse: {
                                     core_asset: "MUSE",
@@ -12353,8 +12353,8 @@ Validation is enforced when an object type is used. */
 
                             reset: function reset() {
                                 _this.core_asset = "CORE";
-                                _this.address_prefix = "LLC";
-                                ecc_config.address_prefix = "LLC";
+                                _this.address_prefix = "KES";
+                                ecc_config.address_prefix = "KES";
                                 _this.expire_in_secs = 15;
                                 _this.expire_in_secs_proposal = 24 * 60 * 60;
 
@@ -12366,7 +12366,7 @@ Validation is enforced when an object type is used. */
                                     arguments.length > 0 &&
                                     arguments[0] !== undefined
                                         ? arguments[0]
-                                        : "LLC";
+                                        : "KES";
 
                                 _this.address_prefix = prefix;
                                 ecc_config.address_prefix = prefix;
